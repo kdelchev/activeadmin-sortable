@@ -39,7 +39,7 @@ gem 'activeadmin-sortable'
 ```ruby
 ActiveAdmin.register Page do
   config.sort_order = 'position_asc' # assumes you are using 'position' for your acts_as_list column
-  config.paginate   = false # optional; drag-and-drop across pages is not supported
+  config.paginate   = false # optional; drag-and-drop across pages is now supported via up and down links
 
   sortable # creates the controller action which handles the sorting
 
