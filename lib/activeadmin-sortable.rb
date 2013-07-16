@@ -17,8 +17,8 @@ module ActiveAdmin
       HANDLE = '&#x2195;'.html_safe
 
       def sortable_handle_column
-        column '' do |resource|
-          sort_url = "#{resource_path(resource)}/sort"
+        column '', :class => "activeadmin-sortable" do |resource|
+          sort_url = url_for([:sort, :admin, resource])
           content_tag :span, HANDLE, :class => 'handle', 'data-sort-url' => sort_url
         end
       end

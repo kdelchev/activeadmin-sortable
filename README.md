@@ -29,6 +29,11 @@ gem 'activeadmin-sortable'
 //= require activeadmin-sortable
 ```
 
+### Include the Stylesheet in active_admin.css
+```css
+//= require activeadmin-sortable
+```
+
 ### Configure your ActiveAdmin Resource
 
 ```ruby
